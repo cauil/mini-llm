@@ -1,0 +1,10 @@
+学习验收记录.md
+大模型作业.pdf
+方案审查与优化说明.md
+课程映射与单课教学流程.md
+从零训练LLM_实践学习路线.md
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+reviews/
+learning/
