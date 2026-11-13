@@ -1,6 +1,6 @@
 # 阶段 2：字符级可训练 bigram
 
-版本：v1；布置日期：2026-11-13。状态：用户明确授权实现，已实现并自检通过，待正式教学 review 与代码理解复盘（2026-11-13）；任务规格不变。实现与运行说明见 `/Users/lcf/llm/learning/stage02_trainable_bigram/README.md`。
+版本：v1；布置日期：2026-11-13。状态：用户明确授权实现，工程 review 通过，本轮主体教学与代码复盘收束，保留后续独立复验（2026-11-13）；任务规格不变。审查见 `/Users/lcf/llm/reviews/阶段2_代码审查.md`。实现与运行说明见 `/Users/lcf/llm/learning/stage02_trainable_bigram/README.md`。
 
 ## 目标与作业关联
 
