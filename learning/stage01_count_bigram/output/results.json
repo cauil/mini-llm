@@ -1,0 +1,224 @@
+{
+  "model": {
+    "vocab": {
+      "春": 0,
+      "风": 1,
+      "雨": 2
+    },
+    "counts": [
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "probabilities": [
+      [
+        0.2,
+        0.6,
+        0.2
+      ],
+      [
+        0.5,
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      [
+        0.25,
+        0.5,
+        0.25
+      ]
+    ],
+    "smoothing": {
+      "name": "add_one",
+      "alpha": 1,
+      "normalization": "row"
+    }
+  },
+  "evaluation": {
+    "train": {
+      "pair_count": 6,
+      "nll_sum": 4.199705077879927,
+      "mean_nll": 0.6999508463133212,
+      "reason": null,
+      "doc_ids": [
+        "train-1",
+        "train-2",
+        "train-3"
+      ],
+      "documents": [
+        {
+          "doc_id": "train-1",
+          "token_count": 3,
+          "pair_count": 2,
+          "nll_sum": 1.203972804325936,
+          "mean_nll": 0.601986402162968,
+          "reason": null,
+          "predictions": [
+            {
+              "target_position": 1,
+              "current_id": 0,
+              "target_id": 1,
+              "probability": 0.6,
+              "nll": 0.5108256237659907
+            },
+            {
+              "target_position": 2,
+              "current_id": 1,
+              "target_id": 0,
+              "probability": 0.5,
+              "nll": 0.6931471805599453
+            }
+          ]
+        },
+        {
+          "doc_id": "train-2",
+          "token_count": 3,
+          "pair_count": 2,
+          "nll_sum": 1.6094379124341005,
+          "mean_nll": 0.8047189562170503,
+          "reason": null,
+          "predictions": [
+            {
+              "target_position": 1,
+              "current_id": 0,
+              "target_id": 1,
+              "probability": 0.6,
+              "nll": 0.5108256237659907
+            },
+            {
+              "target_position": 2,
+              "current_id": 1,
+              "target_id": 2,
+              "probability": 0.3333333333333333,
+              "nll": 1.0986122886681098
+            }
+          ]
+        },
+        {
+          "doc_id": "train-3",
+          "token_count": 3,
+          "pair_count": 2,
+          "nll_sum": 1.3862943611198906,
+          "mean_nll": 0.6931471805599453,
+          "reason": null,
+          "predictions": [
+            {
+              "target_position": 1,
+              "current_id": 2,
+              "target_id": 1,
+              "probability": 0.5,
+              "nll": 0.6931471805599453
+            },
+            {
+              "target_position": 2,
+              "current_id": 1,
+              "target_id": 0,
+              "probability": 0.5,
+              "nll": 0.6931471805599453
+            }
+          ]
+        }
+      ]
+    },
+    "val": {
+      "pair_count": 2,
+      "nll_sum": 2.3025850929940455,
+      "mean_nll": 1.1512925464970227,
+      "reason": null,
+      "doc_ids": [
+        "val-1"
+      ],
+      "documents": [
+        {
+          "doc_id": "val-1",
+          "token_count": 3,
+          "pair_count": 2,
+          "nll_sum": 2.3025850929940455,
+          "mean_nll": 1.1512925464970227,
+          "reason": null,
+          "predictions": [
+            {
+              "target_position": 1,
+              "current_id": 0,
+              "target_id": 2,
+              "probability": 0.2,
+              "nll": 1.6094379124341003
+            },
+            {
+              "target_position": 2,
+              "current_id": 2,
+              "target_id": 1,
+              "probability": 0.5,
+              "nll": 0.6931471805599453
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "generations": [
+    {
+      "prompt": "春",
+      "num_new_tokens": 12,
+      "method": "argmax",
+      "seed": 42,
+      "text": "春风春风春风春风春风春风春",
+      "tokens": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "prompt": "春",
+      "num_new_tokens": 12,
+      "method": "sample",
+      "seed": 42,
+      "text": "春风春风春风雨雨春风春风风",
+      "tokens": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        2,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "conventions": {
+    "context_tokens": 1,
+    "cross_document_pairs": false,
+    "boundary_tokens": false,
+    "log_base": "e",
+    "mean_over": "all_prediction_positions",
+    "stop_after": "num_new_tokens"
+  }
+}

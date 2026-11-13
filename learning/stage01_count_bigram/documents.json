@@ -1,0 +1,8 @@
+{
+  "train": [
+    {"id": "train-1", "text": "春风春"},
+    {"id": "train-2", "text": "春风雨"},
+    {"id": "train-3", "text": "雨风春"}
+  ],
+  "val": [{"id": "val-1", "text": "春雨风"}]
+}

@@ -7,4 +7,4 @@
 **/*.pyc
 **/*.pyo
 reviews/
-learning/
+tmp/

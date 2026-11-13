@@ -1,0 +1,32 @@
+{
+  "T": 3,
+  "stride": 1,
+  "vocab": {
+    "春": 0,
+    "风": 1,
+    "吹": 2,
+    "过": 3,
+    "山": 4,
+    "河": 5
+  },
+  "train_doc_ids": [
+    "A"
+  ],
+  "val_doc_ids": [
+    "B"
+  ],
+  "documents": [
+    {
+      "doc_id": "A",
+      "split": "train",
+      "token_count": 6,
+      "sample_count": 3
+    },
+    {
+      "doc_id": "B",
+      "split": "val",
+      "token_count": 4,
+      "sample_count": 1
+    }
+  ]
+}
