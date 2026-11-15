@@ -1,0 +1,3104 @@
+{
+  "schema_version": 1,
+  "task_version": "v1",
+  "created_at_utc": "2026-11-15T06:38:46.301840+00:00",
+  "environment": {
+    "python": "3.12.16",
+    "pytorch": "2.15.0",
+    "device": "cpu",
+    "dtype": "torch.float64"
+  },
+  "task": "tasks/阶段3_梯度与更新实验任务书.md",
+  "experiments": {
+    "A": {
+      "observations": {
+        "samples": {
+          "A1": {
+            "logits": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target": 1,
+            "h": 1e-05,
+            "probabilities": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ],
+            "loss": 1.0986122886681098,
+            "analytic_gradient": [
+              0.3333333333333333,
+              -0.6666666666666667,
+              0.3333333333333333
+            ],
+            "difference_gradient": [
+              0.33333333333551707,
+              -0.6666666666710341,
+              0.33333333333551707
+            ],
+            "autograd_gradient": [
+              0.3333333333333333,
+              -0.6666666666666667,
+              0.3333333333333333
+            ],
+            "before": {
+              "parameter": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "grad": null
+            },
+            "after_difference": {
+              "parameter": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "grad": null
+            },
+            "after_backward": {
+              "parameter": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "grad": [
+                0.3333333333333333,
+                -0.6666666666666667,
+                0.3333333333333333
+              ]
+            },
+            "checks": [
+              {
+                "name": "解析与autograd",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "解析与中心差分",
+                "passed": true,
+                "max_absolute_error": 4.367395334270441e-12,
+                "absolute_tolerance": 1e-07,
+                "detail": ""
+              },
+              {
+                "name": "独立参考损失",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "差分保持基点及梯度",
+                "passed": true,
+                "detail": ""
+              },
+              {
+                "name": "backward不改参数",
+                "passed": true,
+                "detail": ""
+              }
+            ],
+            "summary": {
+              "total": 5,
+              "passed": 5,
+              "failed": 0,
+              "failed_names": []
+            }
+          },
+          "A2": {
+            "logits": [
+              0.6931471805599453,
+              0.0,
+              0.0
+            ],
+            "target": 2,
+            "h": 1e-05,
+            "probabilities": [
+              0.5,
+              0.25,
+              0.25
+            ],
+            "loss": 1.3862943611198906,
+            "analytic_gradient": [
+              0.5,
+              0.25,
+              -0.75
+            ],
+            "difference_gradient": [
+              0.5000000000032756,
+              0.2500000000016378,
+              -0.7499999999938111
+            ],
+            "autograd_gradient": [
+              0.5,
+              0.25,
+              -0.75
+            ],
+            "before": {
+              "parameter": [
+                0.6931471805599453,
+                0.0,
+                0.0
+              ],
+              "grad": null
+            },
+            "after_difference": {
+              "parameter": [
+                0.6931471805599453,
+                0.0,
+                0.0
+              ],
+              "grad": null
+            },
+            "after_backward": {
+              "parameter": [
+                0.6931471805599453,
+                0.0,
+                0.0
+              ],
+              "grad": [
+                0.5,
+                0.25,
+                -0.75
+              ]
+            },
+            "checks": [
+              {
+                "name": "解析与autograd",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "解析与中心差分",
+                "passed": true,
+                "max_absolute_error": 6.188938250772935e-12,
+                "absolute_tolerance": 1e-07,
+                "detail": ""
+              },
+              {
+                "name": "独立参考损失",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "差分保持基点及梯度",
+                "passed": true,
+                "detail": ""
+              },
+              {
+                "name": "backward不改参数",
+                "passed": true,
+                "detail": ""
+              }
+            ],
+            "summary": {
+              "total": 5,
+              "passed": 5,
+              "failed": 0,
+              "failed_names": []
+            }
+          },
+          "A3": {
+            "logits": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "target": 0,
+            "h": 1e-05,
+            "probabilities": [
+              0.6037488961486258,
+              0.030058887569574023,
+              0.3661922162818002
+            ],
+            "loss": 0.5045969023422835,
+            "analytic_gradient": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ],
+            "difference_gradient": [
+              -0.3962511038513305,
+              0.030058887573458645,
+              0.36619221627787185
+            ],
+            "autograd_gradient": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ],
+            "before": {
+              "parameter": [
+                1.0,
+                -2.0,
+                0.5
+              ],
+              "grad": null
+            },
+            "after_difference": {
+              "parameter": [
+                1.0,
+                -2.0,
+                0.5
+              ],
+              "grad": null
+            },
+            "after_backward": {
+              "parameter": [
+                1.0,
+                -2.0,
+                0.5
+              ],
+              "grad": [
+                -0.3962511038513742,
+                0.030058887569574023,
+                0.3661922162818002
+              ]
+            },
+            "checks": [
+              {
+                "name": "解析与autograd",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "解析与中心差分",
+                "passed": true,
+                "max_absolute_error": 3.928357639182423e-12,
+                "absolute_tolerance": 1e-07,
+                "detail": ""
+              },
+              {
+                "name": "独立参考损失",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "差分保持基点及梯度",
+                "passed": true,
+                "detail": ""
+              },
+              {
+                "name": "backward不改参数",
+                "passed": true,
+                "detail": ""
+              }
+            ],
+            "summary": {
+              "total": 5,
+              "passed": 5,
+              "failed": 0,
+              "failed_names": []
+            }
+          },
+          "A4": {
+            "logits": [
+              0.3,
+              -0.7
+            ],
+            "target": 1,
+            "h": 1e-05,
+            "probabilities": [
+              0.7310585786300049,
+              0.2689414213699951
+            ],
+            "loss": 1.3132616875182228,
+            "analytic_gradient": [
+              0.7310585786300049,
+              -0.7310585786300049
+            ],
+            "difference_gradient": [
+              0.7310585786401979,
+              -0.7310585786179934
+            ],
+            "autograd_gradient": [
+              0.7310585786300049,
+              -0.7310585786300049
+            ],
+            "before": {
+              "parameter": [
+                0.3,
+                -0.7
+              ],
+              "grad": null
+            },
+            "after_difference": {
+              "parameter": [
+                0.3,
+                -0.7
+              ],
+              "grad": null
+            },
+            "after_backward": {
+              "parameter": [
+                0.3,
+                -0.7
+              ],
+              "grad": [
+                0.7310585786300049,
+                -0.7310585786300049
+              ]
+            },
+            "checks": [
+              {
+                "name": "解析与autograd",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "解析与中心差分",
+                "passed": true,
+                "max_absolute_error": 1.2011502903419569e-11,
+                "absolute_tolerance": 1e-07,
+                "detail": ""
+              },
+              {
+                "name": "独立参考损失",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "差分保持基点及梯度",
+                "passed": true,
+                "detail": ""
+              },
+              {
+                "name": "backward不改参数",
+                "passed": true,
+                "detail": ""
+              }
+            ],
+            "summary": {
+              "total": 5,
+              "passed": 5,
+              "failed": 0,
+              "failed_names": []
+            }
+          },
+          "A5": {
+            "logits": [
+              0.0
+            ],
+            "target": 0,
+            "h": 1e-05,
+            "probabilities": [
+              1.0
+            ],
+            "loss": 0.0,
+            "analytic_gradient": [
+              0.0
+            ],
+            "difference_gradient": [
+              0.0
+            ],
+            "autograd_gradient": [
+              0.0
+            ],
+            "before": {
+              "parameter": [
+                0.0
+              ],
+              "grad": null
+            },
+            "after_difference": {
+              "parameter": [
+                0.0
+              ],
+              "grad": null
+            },
+            "after_backward": {
+              "parameter": [
+                0.0
+              ],
+              "grad": [
+                0.0
+              ]
+            },
+            "checks": [
+              {
+                "name": "解析与autograd",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "解析与中心差分",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-07,
+                "detail": ""
+              },
+              {
+                "name": "独立参考损失",
+                "passed": true,
+                "max_absolute_error": 0.0,
+                "absolute_tolerance": 1e-10,
+                "detail": ""
+              },
+              {
+                "name": "差分保持基点及梯度",
+                "passed": true,
+                "detail": ""
+              },
+              {
+                "name": "backward不改参数",
+                "passed": true,
+                "detail": ""
+              }
+            ],
+            "summary": {
+              "total": 5,
+              "passed": 5,
+              "failed": 0,
+              "failed_names": []
+            }
+          }
+        },
+        "step_size_scan": {
+          "logits": [
+            -1.6094379124341003,
+            -0.6931471805599453,
+            -1.2039728043259361
+          ],
+          "target": 0,
+          "component": 0,
+          "analytic_gradient": -0.8,
+          "rows": [
+            {
+              "h": 0.1,
+              "base_score": -1.6094379124341003,
+              "plus_score": -1.5094379124341002,
+              "minus_score": -1.7094379124341004,
+              "plus_changed": true,
+              "minus_changed": true,
+              "loss_plus": 1.5302539315802914,
+              "loss_minus": 1.690221946297941,
+              "estimate": -0.7998400735882483,
+              "absolute_error": 0.00015992641175177624,
+              "observation_status": "outside_standard_tolerance",
+              "explanation": "此h超出常规误差阈值；结合多种h观察近似及浮点误差。"
+            },
+            {
+              "h": 0.001,
+              "base_score": -1.6094379124341003,
+              "plus_score": -1.6084379124341004,
+              "minus_score": -1.6104379124341002,
+              "plus_changed": true,
+              "minus_changed": true,
+              "loss_plus": 1.6086379924501006,
+              "loss_minus": 1.6102379924181003,
+              "estimate": -0.7999999839998218,
+              "absolute_error": 1.600017829339606e-08,
+              "observation_status": "within_standard_tolerance",
+              "explanation": "此h在当前数值尺度下与解析梯度吻合。"
+            },
+            {
+              "h": 1e-06,
+              "base_score": -1.6094379124341003,
+              "plus_score": -1.6094369124341004,
+              "minus_score": -1.6094389124341002,
+              "plus_changed": true,
+              "minus_changed": true,
+              "loss_plus": 1.6094371124341804,
+              "loss_minus": 1.6094387124341802,
+              "estimate": -0.7999999999119822,
+              "absolute_error": 8.801781525846764e-11,
+              "observation_status": "within_standard_tolerance",
+              "explanation": "此h在当前数值尺度下与解析梯度吻合。"
+            },
+            {
+              "h": 1e-16,
+              "base_score": -1.6094379124341003,
+              "plus_score": -1.6094379124341003,
+              "minus_score": -1.6094379124341003,
+              "plus_changed": false,
+              "minus_changed": false,
+              "loss_plus": 1.6094379124341003,
+              "loss_minus": 1.6094379124341003,
+              "estimate": 0.0,
+              "absolute_error": 0.8,
+              "observation_status": "perturbation_rounded_away",
+              "explanation": "至少一侧扰动未改变实际保存值，不能据此判断真实梯度为零。"
+            }
+          ],
+          "note": "扫描记录数值失准，不要求每个h通过梯度精度检查。"
+        }
+      },
+      "checks": [
+        {
+          "name": "A1/解析与autograd",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A1/解析与中心差分",
+          "passed": true,
+          "max_absolute_error": 4.367395334270441e-12,
+          "absolute_tolerance": 1e-07,
+          "detail": ""
+        },
+        {
+          "name": "A1/独立参考损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A1/差分保持基点及梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A1/backward不改参数",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A2/解析与autograd",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A2/解析与中心差分",
+          "passed": true,
+          "max_absolute_error": 6.188938250772935e-12,
+          "absolute_tolerance": 1e-07,
+          "detail": ""
+        },
+        {
+          "name": "A2/独立参考损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A2/差分保持基点及梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A2/backward不改参数",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A3/解析与autograd",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A3/解析与中心差分",
+          "passed": true,
+          "max_absolute_error": 3.928357639182423e-12,
+          "absolute_tolerance": 1e-07,
+          "detail": ""
+        },
+        {
+          "name": "A3/独立参考损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A3/差分保持基点及梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A3/backward不改参数",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A4/解析与autograd",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A4/解析与中心差分",
+          "passed": true,
+          "max_absolute_error": 1.2011502903419569e-11,
+          "absolute_tolerance": 1e-07,
+          "detail": ""
+        },
+        {
+          "name": "A4/独立参考损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A4/差分保持基点及梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A4/backward不改参数",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A5/解析与autograd",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A5/解析与中心差分",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-07,
+          "detail": ""
+        },
+        {
+          "name": "A5/独立参考损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "A5/差分保持基点及梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "A5/backward不改参数",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 25,
+        "passed": 25,
+        "failed": 0,
+        "failed_names": []
+      }
+    },
+    "B": {
+      "observations": {
+        "target": 0,
+        "learning_rate": 0.1,
+        "momentum": 0,
+        "weight_decay": 0,
+        "loss_before": 0.5045969023422835,
+        "loss_after": 0.47605671849072057,
+        "analytic_gradient": [
+          -0.3962511038513742,
+          0.030058887569574023,
+          0.3661922162818002
+        ],
+        "expected_update": [
+          1.0396251103851375,
+          -2.0030058887569573,
+          0.46338077837181996
+        ],
+        "states": {
+          "before_forward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": null
+          },
+          "after_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ]
+          },
+          "after_step": {
+            "parameter": [
+              1.0396251103851375,
+              -2.0030058887569573,
+              0.46338077837181996
+            ],
+            "grad": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ]
+          },
+          "after_clear": {
+            "parameter": [
+              1.0396251103851375,
+              -2.0030058887569573,
+              0.46338077837181996
+            ],
+            "grad": null
+          },
+          "step_without_backward": {
+            "parameter": [
+              1.0396251103851375,
+              -2.0030058887569573,
+              0.46338077837181996
+            ],
+            "grad": null
+          }
+        }
+      },
+      "checks": [
+        {
+          "name": "初始梯度None",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "backward保持参数",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "backward梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "SGD解析更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "step不清梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "清梯度保留参数",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "清后梯度None",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "无backward不更新",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "更新后重新评估",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "本例小步长损失下降",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "failed_names": []
+      }
+    },
+    "C": {
+      "observations": {
+        "model_class": "learning.stage02_trainable_bigram.model.TrainableBigram",
+        "x": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "y": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "batch_size": 4,
+        "vocab_size": 3,
+        "reduction": "mean",
+        "learning_rate": 0.2,
+        "h": 1e-05,
+        "logits": [
+          [
+            0.4,
+            -0.2,
+            0.1
+          ],
+          [
+            0.1,
+            0.5,
+            -0.4
+          ],
+          [
+            0.4,
+            -0.2,
+            0.1
+          ],
+          [
+            0.4,
+            -0.2,
+            0.1
+          ]
+        ],
+        "loss": 1.2790104876357156,
+        "contributions": [
+          {
+            "position": 0,
+            "input_id": 0,
+            "target": 1,
+            "probabilities": [
+              0.4367518169107908,
+              0.23969447920584977,
+              0.32355370388335947
+            ],
+            "loss": 1.4283901699061246,
+            "single_position_gradient": [
+              0.4367518169107908,
+              -0.7603055207941503,
+              0.32355370388335947
+            ],
+            "mean_scaled_contribution": [
+              0.1091879542276977,
+              -0.19007638019853756,
+              0.08088842597083987
+            ]
+          },
+          {
+            "position": 1,
+            "input_id": 1,
+            "target": 0,
+            "probabilities": [
+              0.32275187467651634,
+              0.48148921785244714,
+              0.1957589074710366
+            ],
+            "loss": 1.1308714408244886,
+            "single_position_gradient": [
+              -0.6772481253234837,
+              0.48148921785244714,
+              0.1957589074710366
+            ],
+            "mean_scaled_contribution": [
+              -0.16931203133087092,
+              0.12037230446311178,
+              0.04893972686775915
+            ]
+          },
+          {
+            "position": 2,
+            "input_id": 0,
+            "target": 2,
+            "probabilities": [
+              0.4367518169107908,
+              0.23969447920584977,
+              0.32355370388335947
+            ],
+            "loss": 1.1283901699061243,
+            "single_position_gradient": [
+              0.4367518169107908,
+              0.23969447920584977,
+              -0.6764462961166405
+            ],
+            "mean_scaled_contribution": [
+              0.1091879542276977,
+              0.05992361980146244,
+              -0.16911157402916013
+            ]
+          },
+          {
+            "position": 3,
+            "input_id": 0,
+            "target": 1,
+            "probabilities": [
+              0.4367518169107908,
+              0.23969447920584977,
+              0.32355370388335947
+            ],
+            "loss": 1.4283901699061246,
+            "single_position_gradient": [
+              0.4367518169107908,
+              -0.7603055207941503,
+              0.32355370388335947
+            ],
+            "mean_scaled_contribution": [
+              0.1091879542276977,
+              -0.19007638019853756,
+              0.08088842597083987
+            ]
+          }
+        ],
+        "analytic_gradient": [
+          [
+            0.3275638626830931,
+            -0.3202291405956127,
+            -0.0073347220874804
+          ],
+          [
+            -0.16931203133087092,
+            0.12037230446311178,
+            0.04893972686775915
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "difference_gradient": [
+          [
+            0.32756386267873694,
+            -0.32022914060458874,
+            -0.007334722096352663
+          ],
+          [
+            -0.16931203132841688,
+            0.12037230445738344,
+            0.04893972685993119
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "autograd_gradient": [
+          [
+            0.3275638626830931,
+            -0.3202291405956127,
+            -0.0073347220874804
+          ],
+          [
+            -0.16931203133087092,
+            0.12037230446311178,
+            0.04893972686775916
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_update": [
+          [
+            0.3344872274633814,
+            -0.13595417188087747,
+            0.10146694441749608
+          ],
+          [
+            0.13386240626617418,
+            0.47592553910737767,
+            -0.40978794537355184
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "before": {
+          "parameter": [
+            [
+              0.4,
+              -0.2,
+              0.1
+            ],
+            [
+              0.1,
+              0.5,
+              -0.4
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "grad": null
+        },
+        "after_backward": {
+          "parameter": [
+            [
+              0.4,
+              -0.2,
+              0.1
+            ],
+            [
+              0.1,
+              0.5,
+              -0.4
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "grad": [
+            [
+              0.3275638626830931,
+              -0.3202291405956127,
+              -0.0073347220874804
+            ],
+            [
+              -0.16931203133087092,
+              0.12037230446311178,
+              0.04893972686775916
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        },
+        "after_step": {
+          "parameter": [
+            [
+              0.3344872274633814,
+              -0.13595417188087747,
+              0.10146694441749608
+            ],
+            [
+              0.13386240626617418,
+              0.4759255391073776,
+              -0.40978794537355184
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "grad": [
+            [
+              0.3275638626830931,
+              -0.3202291405956127,
+              -0.0073347220874804
+            ],
+            [
+              -0.16931203133087092,
+              0.12037230446311178,
+              0.04893972686775916
+            ],
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ]
+        }
+      },
+      "checks": [
+        {
+          "name": "差分保持整个模型",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "logits形状B乘V",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "重复输入查相同行",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "重复输入第三次",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "平均损失独立参考",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "共享表解析与autograd",
+          "passed": true,
+          "max_absolute_error": 6.938893903907228e-18,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "共享表解析与差分",
+          "passed": true,
+          "max_absolute_error": 8.976042131791928e-12,
+          "absolute_tolerance": 1e-07,
+          "detail": ""
+        },
+        {
+          "name": "backward不改表",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "共享表SGD",
+          "passed": true,
+          "max_absolute_error": 5.551115123125783e-17,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "未查询行零梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "未查询行保持参数",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 11,
+        "passed": 11,
+        "failed": 0,
+        "failed_names": []
+      }
+    },
+    "D": {
+      "observations": {
+        "keep_previous": {
+          "target": 0,
+          "second_loss_scale": 2,
+          "initial": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": null
+          },
+          "first_new_contribution": [
+            -0.3962511038513742,
+            0.030058887569574023,
+            0.3661922162818002
+          ],
+          "after_first_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ]
+          },
+          "before_second_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ]
+          },
+          "second_new_contribution": [
+            -0.7925022077027484,
+            0.060117775139148046,
+            0.7323844325636004
+          ],
+          "expected_final_gradient": [
+            -1.1887533115541227,
+            0.09017666270872207,
+            1.0985766488454005
+          ],
+          "after_second_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": [
+              -1.1887533115541227,
+              0.09017666270872207,
+              1.0985766488454005
+            ]
+          }
+        },
+        "clear_between": {
+          "target": 0,
+          "second_loss_scale": 2,
+          "initial": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": null
+          },
+          "first_new_contribution": [
+            -0.3962511038513742,
+            0.030058887569574023,
+            0.3661922162818002
+          ],
+          "after_first_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": [
+              -0.3962511038513742,
+              0.030058887569574023,
+              0.3661922162818002
+            ]
+          },
+          "before_second_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": null
+          },
+          "second_new_contribution": [
+            -0.7925022077027484,
+            0.060117775139148046,
+            0.7323844325636004
+          ],
+          "expected_final_gradient": [
+            -0.7925022077027484,
+            0.060117775139148046,
+            0.7323844325636004
+          ],
+          "after_second_backward": {
+            "parameter": [
+              1.0,
+              -2.0,
+              0.5
+            ],
+            "grad": [
+              -0.7925022077027484,
+              0.060117775139148046,
+              0.7323844325636004
+            ]
+          }
+        }
+      },
+      "checks": [
+        {
+          "name": "keep_previous/第一轮贡献",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "keep_previous/第二轮累计",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "keep_previous/没有step参数不变",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "keep_previous/清除行为",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "clear_between/第一轮贡献",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "clear_between/第二轮累计",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "clear_between/没有step参数不变",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "clear_between/清除行为",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0,
+        "failed_names": []
+      }
+    },
+    "E": {
+      "observations": {
+        "logging": {
+          "w": {
+            "value": 1.5,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "a": {
+            "value": 3.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "original_loss": {
+            "value": 9.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "backward_target": {
+            "value": 9.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "saved": null,
+          "logged_value": 9.0,
+          "w_grad": 12.0,
+          "new_leaf_grad": null,
+          "expected_w_gradient": 12.0,
+          "backward_succeeded": true,
+          "outcome": "completed",
+          "error": null
+        },
+        "detached_saved": {
+          "w": {
+            "value": 1.5,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "a": {
+            "value": 3.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "original_loss": {
+            "value": 9.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "backward_target": {
+            "value": 9.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "saved": {
+            "value": 3.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "logged_value": null,
+          "w_grad": 12.0,
+          "new_leaf_grad": null,
+          "expected_w_gradient": 12.0,
+          "backward_succeeded": true,
+          "outcome": "completed",
+          "error": null
+        },
+        "detached_used": {
+          "w": {
+            "value": 1.5,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "a": {
+            "value": 3.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "original_loss": {
+            "value": 9.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "backward_target": {
+            "value": 9.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "saved": null,
+          "logged_value": null,
+          "w_grad": null,
+          "new_leaf_grad": null,
+          "expected_w_gradient": null,
+          "backward_succeeded": false,
+          "outcome": "expected_error",
+          "error": {
+            "type": "RuntimeError",
+            "message": "element 0 of tensors does not require grad and does not have a grad_fn"
+          }
+        },
+        "rewrapped": {
+          "w": {
+            "value": 1.5,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "a": {
+            "value": 3.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "original_loss": {
+            "value": 9.0,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "backward_target": {
+            "value": 9.0,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "saved": null,
+          "logged_value": 9.0,
+          "w_grad": null,
+          "new_leaf_grad": 1.0,
+          "expected_w_gradient": null,
+          "backward_succeeded": true,
+          "outcome": "completed",
+          "error": null
+        },
+        "no_grad_square": {
+          "w": {
+            "value": 1.5,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "a": {
+            "value": 3.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "original_loss": {
+            "value": 9.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "backward_target": {
+            "value": 9.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "saved": null,
+          "logged_value": null,
+          "w_grad": null,
+          "new_leaf_grad": null,
+          "expected_w_gradient": null,
+          "backward_succeeded": false,
+          "outcome": "expected_error",
+          "error": {
+            "type": "RuntimeError",
+            "message": "element 0 of tensors does not require grad and does not have a grad_fn"
+          }
+        },
+        "no_grad_partial": {
+          "w": {
+            "value": 1.5,
+            "requires_grad": true,
+            "grad_fn": null
+          },
+          "a": {
+            "value": 3.0,
+            "requires_grad": false,
+            "grad_fn": null
+          },
+          "original_loss": {
+            "value": 4.5,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "backward_target": {
+            "value": 4.5,
+            "requires_grad": true,
+            "grad_fn": "MulBackward0"
+          },
+          "saved": null,
+          "logged_value": null,
+          "w_grad": 3.0,
+          "new_leaf_grad": null,
+          "expected_w_gradient": 3.0,
+          "backward_succeeded": true,
+          "outcome": "completed",
+          "error": null
+        }
+      },
+      "checks": [
+        {
+          "name": "logging/backward状态",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "logging/目标是否可求导",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "logging/w收到梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "logging/路径解析梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "logging/中间值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "logging/目标数值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "logging/w没有更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/backward状态",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/目标是否可求导",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/w收到梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/路径解析梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/中间值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/目标数值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "detached_saved/w没有更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "detached_used/backward状态",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "detached_used/目标是否可求导",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "detached_used/w未收到梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "detached_used/中间值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "detached_used/目标数值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "detached_used/w没有更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/backward状态",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/目标是否可求导",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/w未收到梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/新叶梯度存在",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/自身导数",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/中间值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/目标数值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "rewrapped/w没有更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_square/backward状态",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_square/目标是否可求导",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_square/w未收到梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_square/中间值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_square/目标数值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_square/w没有更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/backward状态",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/目标是否可求导",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/w收到梯度",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/路径解析梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/中间值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/目标数值",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        },
+        {
+          "name": "no_grad_partial/w没有更新",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 0,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 41,
+        "passed": 41,
+        "failed": 0,
+        "failed_names": []
+      }
+    },
+    "F": {
+      "observations": {
+        "loss_function": "w**2",
+        "momentum": 0,
+        "weight_decay": 0,
+        "runs": [
+          {
+            "learning_rate": 0.1,
+            "initial": {
+              "parameter": 2.0,
+              "grad": null
+            },
+            "loss_before": 4.0,
+            "after_backward": {
+              "parameter": 2.0,
+              "grad": 4.0
+            },
+            "after_step": {
+              "parameter": 1.6,
+              "grad": 4.0
+            },
+            "analytic_gradient": 4.0,
+            "expected_parameter": 1.6,
+            "loss_after": 2.5600000000000005,
+            "loss_decreased": true,
+            "crossed_minimum": false
+          },
+          {
+            "learning_rate": 0.75,
+            "initial": {
+              "parameter": 2.0,
+              "grad": null
+            },
+            "loss_before": 4.0,
+            "after_backward": {
+              "parameter": 2.0,
+              "grad": 4.0
+            },
+            "after_step": {
+              "parameter": -1.0,
+              "grad": 4.0
+            },
+            "analytic_gradient": 4.0,
+            "expected_parameter": -1.0,
+            "loss_after": 1.0,
+            "loss_decreased": true,
+            "crossed_minimum": true
+          },
+          {
+            "learning_rate": 1.5,
+            "initial": {
+              "parameter": 2.0,
+              "grad": null
+            },
+            "loss_before": 4.0,
+            "after_backward": {
+              "parameter": 2.0,
+              "grad": 4.0
+            },
+            "after_step": {
+              "parameter": -4.0,
+              "grad": 4.0
+            },
+            "analytic_gradient": 4.0,
+            "expected_parameter": -4.0,
+            "loss_after": 16.0,
+            "loss_decreased": false,
+            "crossed_minimum": true
+          }
+        ]
+      },
+      "checks": [
+        {
+          "name": "lr=0.1/梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.1/参数",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.1/新损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.1/backward不更新",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.75/梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.75/参数",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.75/新损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=0.75/backward不更新",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "lr=1.5/梯度",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=1.5/参数",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=1.5/新损失",
+          "passed": true,
+          "max_absolute_error": 0.0,
+          "absolute_tolerance": 1e-10,
+          "detail": ""
+        },
+        {
+          "name": "lr=1.5/backward不更新",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0,
+        "failed_names": []
+      }
+    },
+    "input_validation": {
+      "observations": {
+        "rejections": [
+          {
+            "name": "empty_logits",
+            "input_repr": "{'logits': [], 'target': 0, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "logits 必须是非空的一维列表或元组"
+            }
+          },
+          {
+            "name": "bool_score",
+            "input_repr": "{'logits': [True, 0], 'target': 0, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "logits 分量 必须是有限实数，不能为布尔值"
+            }
+          },
+          {
+            "name": "nested_scores",
+            "input_repr": "{'logits': [[0]], 'target': 0, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "logits 分量 必须是有限实数，不能为布尔值"
+            }
+          },
+          {
+            "name": "nan_score",
+            "input_repr": "{'logits': [nan], 'target': 0, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "logits 分量 必须有限"
+            }
+          },
+          {
+            "name": "inf_score",
+            "input_repr": "{'logits': [inf], 'target': 0, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "logits 分量 必须有限"
+            }
+          },
+          {
+            "name": "negative_target",
+            "input_repr": "{'logits': [0, 1], 'target': -1, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "target 必须是范围内的整数编号，不能为布尔值"
+            }
+          },
+          {
+            "name": "large_target",
+            "input_repr": "{'logits': [0, 1], 'target': 2, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "target 必须是范围内的整数编号，不能为布尔值"
+            }
+          },
+          {
+            "name": "float_target",
+            "input_repr": "{'logits': [0, 1], 'target': 0.0, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "target 必须是范围内的整数编号，不能为布尔值"
+            }
+          },
+          {
+            "name": "bool_target",
+            "input_repr": "{'logits': [0, 1], 'target': True, 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "target 必须是范围内的整数编号，不能为布尔值"
+            }
+          },
+          {
+            "name": "string_target",
+            "input_repr": "{'logits': [0, 1], 'target': '0', 'h': 1e-05}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "target 必须是范围内的整数编号，不能为布尔值"
+            }
+          },
+          {
+            "name": "bad_h_0",
+            "input_repr": "{'logits': [0, 1], 'target': 0, 'h': 0}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "h 必须为正"
+            }
+          },
+          {
+            "name": "bad_h_1",
+            "input_repr": "{'logits': [0, 1], 'target': 0, 'h': -1}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "h 必须为正"
+            }
+          },
+          {
+            "name": "bad_h_2",
+            "input_repr": "{'logits': [0, 1], 'target': 0, 'h': inf}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "h 必须有限"
+            }
+          },
+          {
+            "name": "bad_h_3",
+            "input_repr": "{'logits': [0, 1], 'target': 0, 'h': nan}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "h 必须有限"
+            }
+          },
+          {
+            "name": "bad_h_4",
+            "input_repr": "{'logits': [0, 1], 'target': 0, 'h': True}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "h 必须是有限实数，不能为布尔值"
+            }
+          },
+          {
+            "name": "bad_h_5",
+            "input_repr": "{'logits': [0, 1], 'target': 0, 'h': '0.1'}",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "h 必须是有限实数，不能为布尔值"
+            }
+          },
+          {
+            "name": "bad_learning_rate_0",
+            "input_repr": "0",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "learning_rate 必须为正"
+            }
+          },
+          {
+            "name": "bad_learning_rate_1",
+            "input_repr": "-1",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "learning_rate 必须为正"
+            }
+          },
+          {
+            "name": "bad_learning_rate_2",
+            "input_repr": "inf",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "learning_rate 必须有限"
+            }
+          },
+          {
+            "name": "bad_learning_rate_3",
+            "input_repr": "nan",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "learning_rate 必须有限"
+            }
+          },
+          {
+            "name": "bad_learning_rate_4",
+            "input_repr": "True",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "learning_rate 必须是有限实数，不能为布尔值"
+            }
+          },
+          {
+            "name": "bad_learning_rate_5",
+            "input_repr": "'0.1'",
+            "outcome": "expected_rejection",
+            "error": {
+              "type": "ValueError",
+              "message": "learning_rate 必须是有限实数，不能为布尔值"
+            }
+          }
+        ]
+      },
+      "checks": [
+        {
+          "name": "empty_logits",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bool_score",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "nested_scores",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "nan_score",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "inf_score",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "negative_target",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "large_target",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "float_target",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bool_target",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "string_target",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_h_0",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_h_1",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_h_2",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_h_3",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_h_4",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_h_5",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_learning_rate_0",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_learning_rate_1",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_learning_rate_2",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_learning_rate_3",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_learning_rate_4",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "bad_learning_rate_5",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "summary": {
+        "total": 22,
+        "passed": 22,
+        "failed": 0,
+        "failed_names": []
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "A/A1/解析与autograd",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A1/解析与中心差分",
+      "passed": true,
+      "max_absolute_error": 4.367395334270441e-12,
+      "absolute_tolerance": 1e-07,
+      "detail": ""
+    },
+    {
+      "name": "A/A1/独立参考损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A1/差分保持基点及梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A1/backward不改参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A2/解析与autograd",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A2/解析与中心差分",
+      "passed": true,
+      "max_absolute_error": 6.188938250772935e-12,
+      "absolute_tolerance": 1e-07,
+      "detail": ""
+    },
+    {
+      "name": "A/A2/独立参考损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A2/差分保持基点及梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A2/backward不改参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A3/解析与autograd",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A3/解析与中心差分",
+      "passed": true,
+      "max_absolute_error": 3.928357639182423e-12,
+      "absolute_tolerance": 1e-07,
+      "detail": ""
+    },
+    {
+      "name": "A/A3/独立参考损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A3/差分保持基点及梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A3/backward不改参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A4/解析与autograd",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A4/解析与中心差分",
+      "passed": true,
+      "max_absolute_error": 1.2011502903419569e-11,
+      "absolute_tolerance": 1e-07,
+      "detail": ""
+    },
+    {
+      "name": "A/A4/独立参考损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A4/差分保持基点及梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A4/backward不改参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A5/解析与autograd",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A5/解析与中心差分",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-07,
+      "detail": ""
+    },
+    {
+      "name": "A/A5/独立参考损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "A/A5/差分保持基点及梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "A/A5/backward不改参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/初始梯度None",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/backward保持参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/backward梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "B/SGD解析更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "B/step不清梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/清梯度保留参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/清后梯度None",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/无backward不更新",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "B/更新后重新评估",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "B/本例小步长损失下降",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C/差分保持整个模型",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C/logits形状B乘V",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C/重复输入查相同行",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "C/重复输入第三次",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "C/平均损失独立参考",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "C/共享表解析与autograd",
+      "passed": true,
+      "max_absolute_error": 6.938893903907228e-18,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "C/共享表解析与差分",
+      "passed": true,
+      "max_absolute_error": 8.976042131791928e-12,
+      "absolute_tolerance": 1e-07,
+      "detail": ""
+    },
+    {
+      "name": "C/backward不改表",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "C/共享表SGD",
+      "passed": true,
+      "max_absolute_error": 5.551115123125783e-17,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "C/未查询行零梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "C/未查询行保持参数",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D/keep_previous/第一轮贡献",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "D/keep_previous/第二轮累计",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "D/keep_previous/没有step参数不变",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D/keep_previous/清除行为",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D/clear_between/第一轮贡献",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "D/clear_between/第二轮累计",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "D/clear_between/没有step参数不变",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "D/clear_between/清除行为",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/backward状态",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/目标是否可求导",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/w收到梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/路径解析梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/中间值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/目标数值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/logging/w没有更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/backward状态",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/目标是否可求导",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/w收到梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/路径解析梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/中间值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/目标数值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_saved/w没有更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_used/backward状态",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_used/目标是否可求导",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_used/w未收到梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_used/中间值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_used/目标数值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/detached_used/w没有更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/backward状态",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/目标是否可求导",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/w未收到梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/新叶梯度存在",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/自身导数",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/中间值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/目标数值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/rewrapped/w没有更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_square/backward状态",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_square/目标是否可求导",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_square/w未收到梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_square/中间值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_square/目标数值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_square/w没有更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/backward状态",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/目标是否可求导",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/w收到梯度",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/路径解析梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/中间值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/目标数值",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "E/no_grad_partial/w没有更新",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 0,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.1/梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.1/参数",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.1/新损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.1/backward不更新",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.75/梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.75/参数",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.75/新损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=0.75/backward不更新",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=1.5/梯度",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=1.5/参数",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=1.5/新损失",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "absolute_tolerance": 1e-10,
+      "detail": ""
+    },
+    {
+      "name": "F/lr=1.5/backward不更新",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/empty_logits",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bool_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/nested_scores",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/nan_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/inf_score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/negative_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/large_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/float_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bool_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/string_target",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_h_0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_h_1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_h_2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_h_3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_h_4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_h_5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_learning_rate_0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_learning_rate_1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_learning_rate_2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_learning_rate_3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_learning_rate_4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "input_validation/bad_learning_rate_5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "output/json_roundtrip",
+      "passed": true,
+      "detail": "整份结构与所有数值保存后重读核对"
+    }
+  ],
+  "summary": {
+    "total": 130,
+    "passed": 130,
+    "failed": 0,
+    "failed_names": [],
+    "status": "passed"
+  }
+}

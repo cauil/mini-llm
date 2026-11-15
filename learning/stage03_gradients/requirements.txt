@@ -1,0 +1,2 @@
+# 使用既有 conda 环境 pytorch；实现和验证时的版本记录于 output/results.json。
+torch==2.15.0
