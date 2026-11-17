@@ -1,0 +1,4522 @@
+{
+  "count": 232,
+  "passed": 232,
+  "failed": 0,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "shape/V3_k1_D1_H2_B1/emb",
+      "passed": true
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/z",
+      "passed": true
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/a",
+      "passed": true
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/h",
+      "passed": true
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/logits",
+      "passed": true
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/one_hot",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        1,
+        1
+      ],
+      "expected_shape": [
+        1,
+        1,
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/batch_equals_individual",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        3
+      ],
+      "expected_shape": [
+        1,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/permutation",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        3
+      ],
+      "expected_shape": [
+        1,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/position_order",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        1
+      ],
+      "expected_shape": [
+        1,
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/bias_broadcast",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V3_k1_D1_H2_B1/parameter_count",
+      "passed": true
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/emb",
+      "passed": true
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/z",
+      "passed": true
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/a",
+      "passed": true
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/h",
+      "passed": true
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/logits",
+      "passed": true
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/one_hot",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        2,
+        3
+      ],
+      "expected_shape": [
+        4,
+        2,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/batch_equals_individual",
+      "passed": true,
+      "max_absolute_error": 3.469446951953614e-18,
+      "actual_shape": [
+        4,
+        5
+      ],
+      "expected_shape": [
+        4,
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/permutation",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        5
+      ],
+      "expected_shape": [
+        4,
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/position_order",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        6
+      ],
+      "expected_shape": [
+        4,
+        6
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/bias_broadcast",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        4
+      ],
+      "expected_shape": [
+        4,
+        4
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V5_k2_D3_H4_B4/parameter_count",
+      "passed": true
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/emb",
+      "passed": true
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/z",
+      "passed": true
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/a",
+      "passed": true
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/h",
+      "passed": true
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/logits",
+      "passed": true
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/one_hot",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        3,
+        2
+      ],
+      "expected_shape": [
+        5,
+        3,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/batch_equals_individual",
+      "passed": true,
+      "max_absolute_error": 3.469446951953614e-18,
+      "actual_shape": [
+        5,
+        7
+      ],
+      "expected_shape": [
+        5,
+        7
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/permutation",
+      "passed": true,
+      "max_absolute_error": 3.469446951953614e-18,
+      "actual_shape": [
+        5,
+        7
+      ],
+      "expected_shape": [
+        5,
+        7
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/position_order",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        6
+      ],
+      "expected_shape": [
+        5,
+        6
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/bias_broadcast",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        5
+      ],
+      "expected_shape": [
+        5,
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "shape/V7_k3_D2_H5_B5/parameter_count",
+      "passed": true
+    },
+    {
+      "name": "data/manual_train",
+      "passed": true
+    },
+    {
+      "name": "data/manual_val",
+      "passed": true
+    },
+    {
+      "name": "data/source/train/0",
+      "passed": true
+    },
+    {
+      "name": "data/source/train/1",
+      "passed": true
+    },
+    {
+      "name": "data/source/val/0",
+      "passed": true
+    },
+    {
+      "name": "data/source/val/1",
+      "passed": true
+    },
+    {
+      "name": "data/zero_sample_documents",
+      "passed": true
+    },
+    {
+      "name": "data/no_cross_document",
+      "passed": true
+    },
+    {
+      "name": "data/empty_eval",
+      "passed": true
+    },
+    {
+      "name": "data/empty_train",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "训练组没有可预测样本"
+    },
+    {
+      "name": "invalid/vocab_size/0",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "vocab_size 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/vocab_size/-1",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "vocab_size 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/vocab_size/True",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "vocab_size 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/vocab_size/1.5",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "vocab_size 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/context_length/0",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "context_length 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/context_length/-1",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "context_length 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/context_length/True",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "context_length 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/context_length/1.5",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "context_length 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/embedding_dim/0",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "embedding_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/embedding_dim/-1",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "embedding_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/embedding_dim/True",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "embedding_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/embedding_dim/1.5",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "embedding_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/hidden_dim/0",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "hidden_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/hidden_dim/-1",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "hidden_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/hidden_dim/True",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "hidden_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/hidden_dim/1.5",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "hidden_dim 必须是 >= 1 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/input/rank",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "x 必须是非空 CPU long 张量 [B,k]，k 匹配模型"
+    },
+    {
+      "name": "invalid/input/length",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "x 必须是非空 CPU long 张量 [B,k]，k 匹配模型"
+    },
+    {
+      "name": "invalid/input/float",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "x 必须是非空 CPU long 张量 [B,k]，k 匹配模型"
+    },
+    {
+      "name": "invalid/input/empty",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "x 必须是非空 CPU long 张量 [B,k]，k 匹配模型"
+    },
+    {
+      "name": "invalid/input/negative",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "输入 token 编号越界"
+    },
+    {
+      "name": "invalid/input/upper",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "输入 token 编号越界"
+    },
+    {
+      "name": "invalid/lr/0",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "learning_rate 必须是有限正数，不能为布尔值"
+    },
+    {
+      "name": "invalid/lr/-1",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "learning_rate 必须是有限正数，不能为布尔值"
+    },
+    {
+      "name": "invalid/lr/nan",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "learning_rate 必须是有限正数，不能为布尔值"
+    },
+    {
+      "name": "invalid/lr/inf",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "learning_rate 必须是有限正数，不能为布尔值"
+    },
+    {
+      "name": "invalid/lr/True",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "learning_rate 必须是有限正数，不能为布尔值"
+    },
+    {
+      "name": "invalid/steps/-1",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "steps 必须是 >= 0 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/steps/True",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "steps 必须是 >= 0 的整数，不能为布尔值"
+    },
+    {
+      "name": "invalid/steps/1.5",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "steps 必须是 >= 0 的整数，不能为布尔值"
+    },
+    {
+      "name": "data/unknown_even_short",
+      "passed": true,
+      "expected_exception": "KeyError",
+      "message": "\"train 文档 'unknown' 含未知字符：'猫'\""
+    },
+    {
+      "name": "data/duplicate_id",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "文档 id 重复（含跨组重复）：'a'"
+    },
+    {
+      "name": "generation/short",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "提示词必须至少包含 2 个字符"
+    },
+    {
+      "name": "generation/unknown",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "提示词含未知字符：'猫'"
+    },
+    {
+      "name": "generation/negative_length",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "num_new_tokens 必须是 >= 0 的整数，不能为布尔值"
+    },
+    {
+      "name": "generation/method",
+      "passed": true,
+      "expected_exception": "ValueError",
+      "message": "method 必须为 sample 或 argmax"
+    },
+    {
+      "name": "generation/zero_length",
+      "passed": true
+    },
+    {
+      "name": "nonfinite/parameter",
+      "passed": true,
+      "expected_exception": "FloatingPointError",
+      "message": "layer1.weight 含 NaN/Inf"
+    },
+    {
+      "name": "single/relu_away_from_zero",
+      "passed": true
+    },
+    {
+      "name": "single/relu_both_branches",
+      "passed": true
+    },
+    {
+      "name": "single/forward/emb",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2,
+        1
+      ],
+      "expected_shape": [
+        1,
+        2,
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/forward/z",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/forward/a",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/forward/h",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/forward/logits",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        3
+      ],
+      "expected_shape": [
+        1,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/loss",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/probabilities",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        3
+      ],
+      "expected_shape": [
+        1,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3,
+        1
+      ],
+      "expected_shape": [
+        3,
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        2,
+        2
+      ],
+      "expected_shape": [
+        2,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        2
+      ],
+      "expected_shape": [
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3,
+        2
+      ],
+      "expected_shape": [
+        3,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3
+      ],
+      "expected_shape": [
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/z",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/a",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/h",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2
+      ],
+      "expected_shape": [
+        1,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/logits",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        3
+      ],
+      "expected_shape": [
+        1,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/gradient/emb",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        2,
+        1
+      ],
+      "expected_shape": [
+        1,
+        2,
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/unused_embedding/1",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1
+      ],
+      "expected_shape": [
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/scaled_loss/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3,
+        1
+      ],
+      "expected_shape": [
+        3,
+        1
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/scaled_loss/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        2,
+        2
+      ],
+      "expected_shape": [
+        2,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/scaled_loss/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        2
+      ],
+      "expected_shape": [
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/scaled_loss/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3,
+        2
+      ],
+      "expected_shape": [
+        3,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "single/scaled_loss/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3
+      ],
+      "expected_shape": [
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/relu_away_from_zero",
+      "passed": true
+    },
+    {
+      "name": "batch_repeated/relu_both_branches",
+      "passed": true
+    },
+    {
+      "name": "batch_repeated/forward/emb",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        3,
+        2
+      ],
+      "expected_shape": [
+        4,
+        3,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/forward/z",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        6
+      ],
+      "expected_shape": [
+        4,
+        6
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/forward/a",
+      "passed": true,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "actual_shape": [
+        4,
+        3
+      ],
+      "expected_shape": [
+        4,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/forward/h",
+      "passed": true,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "actual_shape": [
+        4,
+        3
+      ],
+      "expected_shape": [
+        4,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/forward/logits",
+      "passed": true,
+      "max_absolute_error": 1.1102230246251565e-16,
+      "actual_shape": [
+        4,
+        5
+      ],
+      "expected_shape": [
+        4,
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/loss",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/probabilities",
+      "passed": true,
+      "max_absolute_error": 5.551115123125783e-17,
+      "actual_shape": [
+        4,
+        5
+      ],
+      "expected_shape": [
+        4,
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        5,
+        2
+      ],
+      "expected_shape": [
+        5,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        3,
+        6
+      ],
+      "expected_shape": [
+        3,
+        6
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        3
+      ],
+      "expected_shape": [
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 3.469446951953614e-17,
+      "actual_shape": [
+        5,
+        3
+      ],
+      "expected_shape": [
+        5,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        5
+      ],
+      "expected_shape": [
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/z",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        4,
+        6
+      ],
+      "expected_shape": [
+        4,
+        6
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/a",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        4,
+        3
+      ],
+      "expected_shape": [
+        4,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/h",
+      "passed": true,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "actual_shape": [
+        4,
+        3
+      ],
+      "expected_shape": [
+        4,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/logits",
+      "passed": true,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "actual_shape": [
+        4,
+        5
+      ],
+      "expected_shape": [
+        4,
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/gradient/emb",
+      "passed": true,
+      "max_absolute_error": 1.3877787807814457e-17,
+      "actual_shape": [
+        4,
+        3,
+        2
+      ],
+      "expected_shape": [
+        4,
+        3,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/unused_embedding/3",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        2
+      ],
+      "expected_shape": [
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/unused_embedding/4",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        2
+      ],
+      "expected_shape": [
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/scaled_loss/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "actual_shape": [
+        5,
+        2
+      ],
+      "expected_shape": [
+        5,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/scaled_loss/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "actual_shape": [
+        3,
+        6
+      ],
+      "expected_shape": [
+        3,
+        6
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/scaled_loss/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "actual_shape": [
+        3
+      ],
+      "expected_shape": [
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/scaled_loss/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 6.938893903907228e-17,
+      "actual_shape": [
+        5,
+        3
+      ],
+      "expected_shape": [
+        5,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "batch_repeated/scaled_loss/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 2.7755575615628914e-17,
+      "actual_shape": [
+        5
+      ],
+      "expected_shape": [
+        5
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "detach/same_logits",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        1,
+        3
+      ],
+      "expected_shape": [
+        1,
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "detach/same_loss",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "detach/disconnected/embedding.weight",
+      "passed": true
+    },
+    {
+      "name": "detach/disconnected/layer1.weight",
+      "passed": true
+    },
+    {
+      "name": "detach/disconnected/layer1.bias",
+      "passed": true
+    },
+    {
+      "name": "detach/downstream/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3,
+        2
+      ],
+      "expected_shape": [
+        3,
+        2
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "detach/nonzero/layer2.weight",
+      "passed": true
+    },
+    {
+      "name": "detach/downstream/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        3
+      ],
+      "expected_shape": [
+        3
+      ],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "detach/nonzero/layer2.bias",
+      "passed": true
+    },
+    {
+      "name": "initialization/zero/embedding.weight",
+      "passed": true
+    },
+    {
+      "name": "initialization/zero/layer1.weight",
+      "passed": true
+    },
+    {
+      "name": "initialization/zero/layer1.bias",
+      "passed": true
+    },
+    {
+      "name": "initialization/zero/layer2.weight",
+      "passed": true
+    },
+    {
+      "name": "initialization/zero/layer2.bias",
+      "passed": true
+    },
+    {
+      "name": "initialization/random_hidden_active",
+      "passed": true
+    },
+    {
+      "name": "initialization/random_embedding_gradient",
+      "passed": true
+    },
+    {
+      "name": "main/backward_preserves/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        6,
+        4
+      ],
+      "expected_shape": [
+        6,
+        4
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "main/sgd/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        6,
+        4
+      ],
+      "expected_shape": [
+        6,
+        4
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "main/backward_preserves/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16,
+        8
+      ],
+      "expected_shape": [
+        16,
+        8
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "main/sgd/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 3.469446951953614e-18,
+      "actual_shape": [
+        16,
+        8
+      ],
+      "expected_shape": [
+        16,
+        8
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "main/backward_preserves/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16
+      ],
+      "expected_shape": [
+        16
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "main/sgd/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16
+      ],
+      "expected_shape": [
+        16
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "main/backward_preserves/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        6,
+        16
+      ],
+      "expected_shape": [
+        6,
+        16
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "main/sgd/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        6,
+        16
+      ],
+      "expected_shape": [
+        6,
+        16
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "main/backward_preserves/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        6
+      ],
+      "expected_shape": [
+        6
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "main/sgd/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        6
+      ],
+      "expected_shape": [
+        6
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "main/eval_chunk_1",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "main/eval_chunk_3",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "synthetic/mlp_targets_above_0.9",
+      "passed": true,
+      "target_probabilities": [
+        0.9994664848516599,
+        0.9994769659246583
+      ]
+    },
+    {
+      "name": "synthetic/mlp/backward_preserves/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        4
+      ],
+      "expected_shape": [
+        5,
+        4
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/mlp/sgd/embedding.weight",
+      "passed": true,
+      "max_absolute_error": 3.469446951953614e-18,
+      "actual_shape": [
+        5,
+        4
+      ],
+      "expected_shape": [
+        5,
+        4
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "synthetic/mlp/backward_preserves/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16,
+        8
+      ],
+      "expected_shape": [
+        16,
+        8
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/mlp/sgd/layer1.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16,
+        8
+      ],
+      "expected_shape": [
+        16,
+        8
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "synthetic/mlp/backward_preserves/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16
+      ],
+      "expected_shape": [
+        16
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/mlp/sgd/layer1.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        16
+      ],
+      "expected_shape": [
+        16
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "synthetic/mlp/backward_preserves/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        16
+      ],
+      "expected_shape": [
+        5,
+        16
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/mlp/sgd/layer2.weight",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        16
+      ],
+      "expected_shape": [
+        5,
+        16
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "synthetic/mlp/backward_preserves/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5
+      ],
+      "expected_shape": [
+        5
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/mlp/sgd/layer2.bias",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5
+      ],
+      "expected_shape": [
+        5
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "synthetic/bigram/backward_preserves/score_table",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        5
+      ],
+      "expected_shape": [
+        5,
+        5
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/bigram/sgd/score_table",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5,
+        5
+      ],
+      "expected_shape": [
+        5,
+        5
+      ],
+      "atol": 1e-12,
+      "rtol": 1e-12
+    },
+    {
+      "name": "synthetic/bigram_identical_context_distributions",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        5
+      ],
+      "expected_shape": [
+        5
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "synthetic/same_prediction_targets",
+      "passed": true
+    },
+    {
+      "name": "synthetic/mlp_lower_loss",
+      "passed": true
+    },
+    {
+      "name": "generation/replay/argmax",
+      "passed": true
+    },
+    {
+      "name": "generation/context/argmax/0",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/0",
+      "passed": true,
+      "max_absolute_error": 2.220446049250313e-16,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/1",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/1",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/2",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/2",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/3",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/3",
+      "passed": true,
+      "max_absolute_error": 2.220446049250313e-16,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/4",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/4",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/5",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/5",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/6",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/6",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/7",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/7",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/8",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/8",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/9",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/9",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/10",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/10",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/argmax/11",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/argmax/11",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/decoded/argmax",
+      "passed": true
+    },
+    {
+      "name": "generation/replay/sample",
+      "passed": true
+    },
+    {
+      "name": "generation/context/sample/0",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/0",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/1",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/1",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/2",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/2",
+      "passed": true,
+      "max_absolute_error": 2.220446049250313e-16,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/3",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/3",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/4",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/4",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/5",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/5",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/6",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/6",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/7",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/7",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/8",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/8",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/9",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/9",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/10",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/10",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/context/sample/11",
+      "passed": true
+    },
+    {
+      "name": "generation/probability_sum/sample/11",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [],
+      "expected_shape": [],
+      "atol": 1e-08,
+      "rtol": 1e-06
+    },
+    {
+      "name": "generation/decoded/sample",
+      "passed": true
+    },
+    {
+      "name": "checkpoint/logits",
+      "passed": true,
+      "max_absolute_error": 0.0,
+      "actual_shape": [
+        4,
+        6
+      ],
+      "expected_shape": [
+        4,
+        6
+      ],
+      "atol": 0,
+      "rtol": 0
+    },
+    {
+      "name": "checkpoint/vocab_config",
+      "passed": true
+    },
+    {
+      "name": "checkpoint/new_parameter_objects",
+      "passed": true
+    },
+    {
+      "name": "serialization/results_roundtrip",
+      "passed": true
+    }
+  ],
+  "experiments": {
+    "gradients": [
+      {
+        "parameters": {
+          "embedding.weight": [
+            [
+              1.0
+            ],
+            [
+              -1.0
+            ],
+            [
+              2.0
+            ]
+          ],
+          "layer1.weight": [
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              -1.0
+            ]
+          ],
+          "layer1.bias": [
+            0.0,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              0.0,
+              1.0
+            ],
+            [
+              0.23104906018664842,
+              -1.0
+            ],
+            [
+              0.0,
+              2.0
+            ]
+          ],
+          "layer2.bias": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "x": [
+          [
+            0,
+            2
+          ]
+        ],
+        "y": [
+          2
+        ],
+        "actual_forward": {
+          "emb": [
+            [
+              [
+                1.0
+              ],
+              [
+                2.0
+              ]
+            ]
+          ],
+          "z": [
+            [
+              1.0,
+              2.0
+            ]
+          ],
+          "a": [
+            [
+              3.0,
+              -1.0
+            ]
+          ],
+          "h": [
+            [
+              3.0,
+              0.0
+            ]
+          ],
+          "logits": [
+            [
+              0.0,
+              0.6931471805599453,
+              0.0
+            ]
+          ]
+        },
+        "actual_probabilities": [
+          [
+            0.25,
+            0.5,
+            0.25
+          ]
+        ],
+        "actual_sample_losses": [
+          1.3862943611198906
+        ],
+        "actual_mean_loss": 1.3862943611198906,
+        "reference": {
+          "forward": {
+            "emb": [
+              [
+                [
+                  1.0
+                ],
+                [
+                  2.0
+                ]
+              ]
+            ],
+            "z": [
+              [
+                1.0,
+                2.0
+              ]
+            ],
+            "a": [
+              [
+                3.0,
+                -1.0
+              ]
+            ],
+            "h": [
+              [
+                3.0,
+                0.0
+              ]
+            ],
+            "logits": [
+              [
+                0.0,
+                0.6931471805599453,
+                0.0
+              ]
+            ]
+          },
+          "probabilities": [
+            [
+              0.25,
+              0.5,
+              0.25
+            ]
+          ],
+          "sample_losses": [
+            1.3862943611198906
+          ],
+          "mean_loss": 1.3862943611198906,
+          "gradients": {
+            "embedding.weight": [
+              [
+                0.11552453009332421
+              ],
+              [
+                0.0
+              ],
+              [
+                0.11552453009332421
+              ]
+            ],
+            "layer1.weight": [
+              [
+                0.11552453009332421,
+                0.23104906018664842
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "layer1.bias": [
+              0.11552453009332421,
+              0.0
+            ],
+            "layer2.weight": [
+              [
+                0.75,
+                0.0
+              ],
+              [
+                1.5,
+                0.0
+              ],
+              [
+                -2.25,
+                0.0
+              ]
+            ],
+            "layer2.bias": [
+              0.25,
+              0.5,
+              -0.75
+            ],
+            "z": [
+              [
+                0.11552453009332421,
+                0.11552453009332421
+              ]
+            ],
+            "a": [
+              [
+                0.11552453009332421,
+                0.0
+              ]
+            ],
+            "h": [
+              [
+                0.11552453009332421,
+                -1.75
+              ]
+            ],
+            "logits": [
+              [
+                0.25,
+                0.5,
+                -0.75
+              ]
+            ],
+            "emb": [
+              [
+                [
+                  0.11552453009332421
+                ],
+                [
+                  0.11552453009332421
+                ]
+              ]
+            ]
+          },
+          "embedding_contributions": [
+            {
+              "sample": 0,
+              "position": 0,
+              "token_id": 0,
+              "gradient": [
+                0.11552453009332421
+              ]
+            },
+            {
+              "sample": 0,
+              "position": 1,
+              "token_id": 2,
+              "gradient": [
+                0.11552453009332421
+              ]
+            }
+          ]
+        },
+        "autograd": {
+          "embedding.weight": [
+            [
+              0.11552453009332421
+            ],
+            [
+              0.0
+            ],
+            [
+              0.11552453009332421
+            ]
+          ],
+          "layer1.weight": [
+            [
+              0.11552453009332421,
+              0.23104906018664842
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.bias": [
+            0.11552453009332421,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              0.75,
+              0.0
+            ],
+            [
+              1.5,
+              0.0
+            ],
+            [
+              -2.25,
+              0.0
+            ]
+          ],
+          "layer2.bias": [
+            0.25,
+            0.5,
+            -0.75
+          ],
+          "emb": [
+            [
+              [
+                0.11552453009332421
+              ],
+              [
+                0.11552453009332421
+              ]
+            ]
+          ],
+          "z": [
+            [
+              0.11552453009332421,
+              0.11552453009332421
+            ]
+          ],
+          "a": [
+            [
+              0.11552453009332421,
+              0.0
+            ]
+          ],
+          "h": [
+            [
+              0.11552453009332421,
+              -1.75
+            ]
+          ],
+          "logits": [
+            [
+              0.25,
+              0.5,
+              -0.75
+            ]
+          ]
+        }
+      },
+      {
+        "parameters": {
+          "embedding.weight": [
+            [
+              0.3,
+              -0.2
+            ],
+            [
+              -0.4,
+              0.7
+            ],
+            [
+              0.8,
+              0.1
+            ],
+            [
+              0.2,
+              0.5
+            ],
+            [
+              -0.6,
+              0.4
+            ]
+          ],
+          "layer1.weight": [
+            [
+              0.2,
+              -0.3,
+              0.4,
+              0.1,
+              -0.2,
+              0.5
+            ],
+            [
+              -0.4,
+              0.2,
+              0.3,
+              -0.5,
+              0.1,
+              0.2
+            ],
+            [
+              0.6,
+              0.1,
+              -0.2,
+              0.4,
+              0.3,
+              -0.1
+            ]
+          ],
+          "layer1.bias": [
+            0.11,
+            -0.23,
+            0.17
+          ],
+          "layer2.weight": [
+            [
+              0.2,
+              -0.4,
+              0.1
+            ],
+            [
+              -0.3,
+              0.5,
+              0.2
+            ],
+            [
+              0.4,
+              0.1,
+              -0.2
+            ],
+            [
+              -0.1,
+              -0.3,
+              0.6
+            ],
+            [
+              0.5,
+              -0.2,
+              -0.4
+            ]
+          ],
+          "layer2.bias": [
+            0.1,
+            -0.2,
+            0.05,
+            0.3,
+            -0.1
+          ]
+        },
+        "x": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            0
+          ]
+        ],
+        "y": [
+          1,
+          2,
+          0,
+          1
+        ],
+        "actual_forward": {
+          "emb": [
+            [
+              [
+                0.3,
+                -0.2
+              ],
+              [
+                -0.4,
+                0.7
+              ],
+              [
+                0.3,
+                -0.2
+              ]
+            ],
+            [
+              [
+                0.8,
+                0.1
+              ],
+              [
+                0.3,
+                -0.2
+              ],
+              [
+                -0.4,
+                0.7
+              ]
+            ],
+            [
+              [
+                -0.4,
+                0.7
+              ],
+              [
+                -0.4,
+                0.7
+              ],
+              [
+                0.8,
+                0.1
+              ]
+            ],
+            [
+              [
+                0.3,
+                -0.2
+              ],
+              [
+                0.8,
+                0.1
+              ],
+              [
+                0.3,
+                -0.2
+              ]
+            ]
+          ],
+          "z": [
+            [
+              0.3,
+              -0.2,
+              -0.4,
+              0.7,
+              0.3,
+              -0.2
+            ],
+            [
+              0.8,
+              0.1,
+              0.3,
+              -0.2,
+              -0.4,
+              0.7
+            ],
+            [
+              -0.4,
+              0.7,
+              -0.4,
+              0.7,
+              0.8,
+              0.1
+            ],
+            [
+              0.3,
+              -0.2,
+              0.8,
+              0.1,
+              0.3,
+              -0.2
+            ]
+          ],
+          "a": [
+            [
+              -0.02000000000000003,
+              -0.87,
+              0.8
+            ],
+            [
+              0.77,
+              -0.24000000000000005,
+              0.32999999999999996
+            ],
+            [
+              -0.38000000000000006,
+              -0.29999999999999993,
+              0.5900000000000001
+            ],
+            [
+              0.4,
+              -0.21000000000000002,
+              0.31999999999999995
+            ]
+          ],
+          "h": [
+            [
+              0.0,
+              0.0,
+              0.8
+            ],
+            [
+              0.77,
+              0.0,
+              0.32999999999999996
+            ],
+            [
+              0.0,
+              0.0,
+              0.5900000000000001
+            ],
+            [
+              0.4,
+              0.0,
+              0.31999999999999995
+            ]
+          ],
+          "logits": [
+            [
+              0.18000000000000002,
+              -0.03999999999999998,
+              -0.11000000000000003,
+              0.78,
+              -0.42000000000000004
+            ],
+            [
+              0.28700000000000003,
+              -0.365,
+              0.29200000000000004,
+              0.42099999999999993,
+              0.153
+            ],
+            [
+              0.15900000000000003,
+              -0.08199999999999999,
+              -0.06800000000000002,
+              0.654,
+              -0.3360000000000001
+            ],
+            [
+              0.21200000000000002,
+              -0.256,
+              0.14600000000000005,
+              0.45199999999999996,
+              -0.027999999999999983
+            ]
+          ]
+        },
+        "actual_probabilities": [
+          [
+            0.20318129891456493,
+            0.16305681177337164,
+            0.1520331635910592,
+            0.3702204646399924,
+            0.11150826108101178
+          ],
+          [
+            0.22007051292148763,
+            0.11465733771723041,
+            0.22117362095804569,
+            0.2516270442899434,
+            0.19247148411329273
+          ],
+          [
+            0.20691803316811694,
+            0.16260480371391065,
+            0.16489728086227282,
+            0.3394486690414429,
+            0.12613121321425685
+          ],
+          [
+            0.21643797040216592,
+            0.13554504161764622,
+            0.20261426429810342,
+            0.27514658597104275,
+            0.17025613771104176
+          ]
+        ],
+        "actual_sample_losses": [
+          1.8136566004138608,
+          1.5088072707036946,
+          1.575432539168835,
+          1.9984512834361652
+        ],
+        "actual_mean_loss": 1.7240869234306389,
+        "reference": {
+          "forward": {
+            "emb": [
+              [
+                [
+                  0.3,
+                  -0.2
+                ],
+                [
+                  -0.4,
+                  0.7
+                ],
+                [
+                  0.3,
+                  -0.2
+                ]
+              ],
+              [
+                [
+                  0.8,
+                  0.1
+                ],
+                [
+                  0.3,
+                  -0.2
+                ],
+                [
+                  -0.4,
+                  0.7
+                ]
+              ],
+              [
+                [
+                  -0.4,
+                  0.7
+                ],
+                [
+                  -0.4,
+                  0.7
+                ],
+                [
+                  0.8,
+                  0.1
+                ]
+              ],
+              [
+                [
+                  0.3,
+                  -0.2
+                ],
+                [
+                  0.8,
+                  0.1
+                ],
+                [
+                  0.3,
+                  -0.2
+                ]
+              ]
+            ],
+            "z": [
+              [
+                0.3,
+                -0.2,
+                -0.4,
+                0.7,
+                0.3,
+                -0.2
+              ],
+              [
+                0.8,
+                0.1,
+                0.3,
+                -0.2,
+                -0.4,
+                0.7
+              ],
+              [
+                -0.4,
+                0.7,
+                -0.4,
+                0.7,
+                0.8,
+                0.1
+              ],
+              [
+                0.3,
+                -0.2,
+                0.8,
+                0.1,
+                0.3,
+                -0.2
+              ]
+            ],
+            "a": [
+              [
+                -0.02000000000000006,
+                -0.87,
+                0.8
+              ],
+              [
+                0.77,
+                -0.2400000000000001,
+                0.32999999999999996
+              ],
+              [
+                -0.3800000000000001,
+                -0.29999999999999993,
+                0.59
+              ],
+              [
+                0.4,
+                -0.21000000000000002,
+                0.31999999999999995
+              ]
+            ],
+            "h": [
+              [
+                0.0,
+                0.0,
+                0.8
+              ],
+              [
+                0.77,
+                0.0,
+                0.32999999999999996
+              ],
+              [
+                0.0,
+                0.0,
+                0.59
+              ],
+              [
+                0.4,
+                0.0,
+                0.31999999999999995
+              ]
+            ],
+            "logits": [
+              [
+                0.18000000000000002,
+                -0.03999999999999998,
+                -0.11000000000000003,
+                0.78,
+                -0.42000000000000004
+              ],
+              [
+                0.28700000000000003,
+                -0.365,
+                0.29200000000000004,
+                0.42099999999999993,
+                0.153
+              ],
+              [
+                0.159,
+                -0.08200000000000002,
+                -0.06799999999999999,
+                0.6539999999999999,
+                -0.33599999999999997
+              ],
+              [
+                0.21200000000000002,
+                -0.256,
+                0.14600000000000005,
+                0.45199999999999996,
+                -0.02799999999999997
+              ]
+            ]
+          },
+          "probabilities": [
+            [
+              0.2031812989145649,
+              0.16305681177337167,
+              0.1520331635910592,
+              0.3702204646399924,
+              0.11150826108101178
+            ],
+            [
+              0.22007051292148766,
+              0.11465733771723043,
+              0.2211736209580457,
+              0.2516270442899434,
+              0.19247148411329273
+            ],
+            [
+              0.20691803316811694,
+              0.16260480371391062,
+              0.16489728086227282,
+              0.33944866904144283,
+              0.12613121321425685
+            ],
+            [
+              0.21643797040216592,
+              0.1355450416176462,
+              0.2026142642981034,
+              0.27514658597104275,
+              0.17025613771104178
+            ]
+          ],
+          "sample_losses": [
+            1.8136566004138608,
+            1.5088072707036948,
+            1.5754325391688349,
+            1.9984512834361652
+          ],
+          "mean_loss": 1.7240869234306389,
+          "gradients": {
+            "embedding.weight": [
+              [
+                -0.058133494002217005,
+                0.0437622873179033
+              ],
+              [
+                0.03948629841260239,
+                -0.026535925888077284
+              ],
+              [
+                0.08403798260903082,
+                0.023897705882211746
+              ],
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "layer1.weight": [
+              [
+                -0.013071882726040464,
+                -0.0278351751966399,
+                0.07094359356055936,
+                0.022574110575319998,
+                0.05618030108995993,
+                -0.06246126710464009
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.040488329328035,
+                0.02445767574982656,
+                -0.005705238922166778,
+                -0.003241360020056298,
+                -0.01988409173586474,
+                0.05464388628177643
+              ]
+            ],
+            "layer1.bias": [
+              0.052610646213199,
+              0.0,
+              0.06335218362019515
+            ],
+            "layer2.weight": [
+              [
+                0.06400737077760296,
+                0.0,
+                -0.040872475376593755
+              ],
+              [
+                -0.06437395832766853,
+                0.0,
+                -0.20310159540644063
+              ],
+              [
+                -0.12966265153576584,
+                0.0,
+                0.006684946518284128
+              ],
+              [
+                0.07595286462291839,
+                0.0,
+                0.16688372964321505
+              ],
+              [
+                0.05407637446291304,
+                0.0,
+                0.07040539462153522
+              ]
+            ],
+            "layer2.bias": [
+              -0.038348046148416144,
+              -0.3560340012944603,
+              -0.06482041757262971,
+              0.30911069098560534,
+              0.1500917740299008
+            ],
+            "z": [
+              [
+                7.775081926456387e-06,
+                1.2958469877427312e-06,
+                -2.5916939754854625e-06,
+                5.183387950970925e-06,
+                3.887540963228193e-06,
+                -1.2958469877427312e-06
+              ],
+              [
+                0.029661683499895126,
+                0.024180331643315962,
+                -0.036818632650631865,
+                0.021698127439263432,
+                0.03214388770394766,
+                -0.03572236227931603
+              ],
+              [
+                0.01101750360394533,
+                0.0018362506006575552,
+                -0.0036725012013151103,
+                0.007345002402630221,
+                0.005508751801972665,
+                -0.0018362506006575552
+              ],
+              [
+                0.00784647722898998,
+                -0.03546585359290144,
+                0.04886754730716303,
+                0.0015536248395533418,
+                -0.029173001203464808,
+                0.057530013471541304
+              ]
+            ],
+            "a": [
+              [
+                0.0,
+                0.0,
+                1.2958469877427312e-05
+              ],
+              [
+                -0.05771015318000032,
+                0.0,
+                0.06867285689315866
+              ],
+              [
+                0.0,
+                0.0,
+                0.01836250600657555
+              ],
+              [
+                0.11032079939319932,
+                0.0,
+                -0.023696137749416476
+              ]
+            ],
+            "h": [
+              [
+                0.09281614144095793,
+                -0.15447714723205858,
+                1.2958469877427312e-05
+              ],
+              [
+                -0.05771015318000032,
+                -0.05564114608095422,
+                0.06867285689315866
+              ],
+              [
+                -0.028079545608164135,
+                0.0719910183301629,
+                0.01836250600657555
+              ],
+              [
+                0.11032079939319932,
+                -0.15378411106393852,
+                -0.023696137749416476
+              ]
+            ],
+            "logits": [
+              [
+                0.05079532472864123,
+                -0.20923579705665707,
+                0.0380082908977648,
+                0.0925551161599981,
+                0.027877065270252945
+              ],
+              [
+                0.055017628230371915,
+                0.028664334429307606,
+                -0.19470659476048857,
+                0.06290676107248586,
+                0.048117871028323184
+              ],
+              [
+                -0.19827049170797076,
+                0.040651200928477654,
+                0.041224320215568204,
+                0.08486216726036071,
+                0.031532803303564214
+              ],
+              [
+                0.05410949260054148,
+                -0.21611373959558844,
+                0.05065356607452585,
+                0.06878664649276069,
+                0.042564034427760446
+              ]
+            ],
+            "emb": [
+              [
+                [
+                  7.775081926456387e-06,
+                  1.2958469877427312e-06
+                ],
+                [
+                  -2.5916939754854625e-06,
+                  5.183387950970925e-06
+                ],
+                [
+                  3.887540963228193e-06,
+                  -1.2958469877427312e-06
+                ]
+              ],
+              [
+                [
+                  0.029661683499895126,
+                  0.024180331643315962
+                ],
+                [
+                  -0.036818632650631865,
+                  0.021698127439263432
+                ],
+                [
+                  0.03214388770394766,
+                  -0.03572236227931603
+                ]
+              ],
+              [
+                [
+                  0.01101750360394533,
+                  0.0018362506006575552
+                ],
+                [
+                  -0.0036725012013151103,
+                  0.007345002402630221
+                ],
+                [
+                  0.005508751801972665,
+                  -0.0018362506006575552
+                ]
+              ],
+              [
+                [
+                  0.00784647722898998,
+                  -0.03546585359290144
+                ],
+                [
+                  0.04886754730716303,
+                  0.0015536248395533418
+                ],
+                [
+                  -0.029173001203464808,
+                  0.057530013471541304
+                ]
+              ]
+            ]
+          },
+          "embedding_contributions": [
+            {
+              "sample": 0,
+              "position": 0,
+              "token_id": 0,
+              "gradient": [
+                7.775081926456387e-06,
+                1.2958469877427312e-06
+              ]
+            },
+            {
+              "sample": 0,
+              "position": 1,
+              "token_id": 1,
+              "gradient": [
+                -2.5916939754854625e-06,
+                5.183387950970925e-06
+              ]
+            },
+            {
+              "sample": 0,
+              "position": 2,
+              "token_id": 0,
+              "gradient": [
+                3.887540963228193e-06,
+                -1.2958469877427312e-06
+              ]
+            },
+            {
+              "sample": 1,
+              "position": 0,
+              "token_id": 2,
+              "gradient": [
+                0.029661683499895126,
+                0.024180331643315962
+              ]
+            },
+            {
+              "sample": 1,
+              "position": 1,
+              "token_id": 0,
+              "gradient": [
+                -0.036818632650631865,
+                0.021698127439263432
+              ]
+            },
+            {
+              "sample": 1,
+              "position": 2,
+              "token_id": 1,
+              "gradient": [
+                0.03214388770394766,
+                -0.03572236227931603
+              ]
+            },
+            {
+              "sample": 2,
+              "position": 0,
+              "token_id": 1,
+              "gradient": [
+                0.01101750360394533,
+                0.0018362506006575552
+              ]
+            },
+            {
+              "sample": 2,
+              "position": 1,
+              "token_id": 1,
+              "gradient": [
+                -0.0036725012013151103,
+                0.007345002402630221
+              ]
+            },
+            {
+              "sample": 2,
+              "position": 2,
+              "token_id": 2,
+              "gradient": [
+                0.005508751801972665,
+                -0.0018362506006575552
+              ]
+            },
+            {
+              "sample": 3,
+              "position": 0,
+              "token_id": 0,
+              "gradient": [
+                0.00784647722898998,
+                -0.03546585359290144
+              ]
+            },
+            {
+              "sample": 3,
+              "position": 1,
+              "token_id": 2,
+              "gradient": [
+                0.04886754730716303,
+                0.0015536248395533418
+              ]
+            },
+            {
+              "sample": 3,
+              "position": 2,
+              "token_id": 0,
+              "gradient": [
+                -0.029173001203464808,
+                0.057530013471541304
+              ]
+            }
+          ]
+        },
+        "autograd": {
+          "embedding.weight": [
+            [
+              -0.05813349400221701,
+              0.0437622873179033
+            ],
+            [
+              0.0394862984126024,
+              -0.026535925888077284
+            ],
+            [
+              0.08403798260903084,
+              0.023897705882211753
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.weight": [
+            [
+              -0.013071882726040467,
+              -0.0278351751966399,
+              0.07094359356055936,
+              0.022574110575319998,
+              0.05618030108995992,
+              -0.06246126710464008
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.04048832932803501,
+              0.02445767574982656,
+              -0.005705238922166771,
+              -0.003241360020056303,
+              -0.019884091735864747,
+              0.05464388628177644
+            ]
+          ],
+          "layer1.bias": [
+            0.052610646213199,
+            0.0,
+            0.06335218362019517
+          ],
+          "layer2.weight": [
+            [
+              0.06400737077760296,
+              0.0,
+              -0.04087247537659379
+            ],
+            [
+              -0.06437395832766851,
+              0.0,
+              -0.20310159540644063
+            ],
+            [
+              -0.12966265153576584,
+              0.0,
+              0.006684946518284139
+            ],
+            [
+              0.07595286462291839,
+              0.0,
+              0.16688372964321505
+            ],
+            [
+              0.05407637446291303,
+              0.0,
+              0.07040539462153524
+            ]
+          ],
+          "layer2.bias": [
+            -0.03834804614841616,
+            -0.3560340012944603,
+            -0.06482041757262971,
+            0.30911069098560534,
+            0.1500917740299008
+          ],
+          "emb": [
+            [
+              [
+                7.775081926454559e-06,
+                1.2958469877424265e-06
+              ],
+              [
+                -2.591693975484853e-06,
+                5.183387950969706e-06
+              ],
+              [
+                3.887540963227279e-06,
+                -1.2958469877424265e-06
+              ]
+            ],
+            [
+              [
+                0.02966168349989514,
+                0.024180331643315966
+              ],
+              [
+                -0.036818632650631865,
+                0.02169812743926344
+              ],
+              [
+                0.03214388770394767,
+                -0.03572236227931603
+              ]
+            ],
+            [
+              [
+                0.01101750360394533,
+                0.0018362506006575552
+              ],
+              [
+                -0.0036725012013151103,
+                0.007345002402630221
+              ],
+              [
+                0.005508751801972665,
+                -0.0018362506006575552
+              ]
+            ],
+            [
+              [
+                0.00784647722898998,
+                -0.03546585359290144
+              ],
+              [
+                0.04886754730716303,
+                0.001553624839553342
+              ],
+              [
+                -0.029173001203464808,
+                0.057530013471541304
+              ]
+            ]
+          ],
+          "z": [
+            [
+              7.775081926454559e-06,
+              1.2958469877424265e-06,
+              -2.591693975484853e-06,
+              5.183387950969706e-06,
+              3.887540963227279e-06,
+              -1.2958469877424265e-06
+            ],
+            [
+              0.02966168349989514,
+              0.024180331643315966,
+              -0.036818632650631865,
+              0.02169812743926344,
+              0.03214388770394767,
+              -0.03572236227931603
+            ],
+            [
+              0.01101750360394533,
+              0.0018362506006575552,
+              -0.0036725012013151103,
+              0.007345002402630221,
+              0.005508751801972665,
+              -0.0018362506006575552
+            ],
+            [
+              0.00784647722898998,
+              -0.03546585359290144,
+              0.04886754730716303,
+              0.001553624839553342,
+              -0.029173001203464808,
+              0.057530013471541304
+            ]
+          ],
+          "a": [
+            [
+              0.0,
+              0.0,
+              1.2958469877424264e-05
+            ],
+            [
+              -0.05771015318000032,
+              0.0,
+              0.06867285689315868
+            ],
+            [
+              0.0,
+              0.0,
+              0.01836250600657555
+            ],
+            [
+              0.11032079939319932,
+              0.0,
+              -0.023696137749416476
+            ]
+          ],
+          "h": [
+            [
+              0.09281614144095796,
+              -0.15447714723205858,
+              1.2958469877424264e-05
+            ],
+            [
+              -0.05771015318000032,
+              -0.05564114608095421,
+              0.06867285689315868
+            ],
+            [
+              -0.028079545608164138,
+              0.07199101833016291,
+              0.01836250600657555
+            ],
+            [
+              0.11032079939319932,
+              -0.15378411106393852,
+              -0.023696137749416476
+            ]
+          ],
+          "logits": [
+            [
+              0.050795324728641233,
+              -0.20923579705665707,
+              0.03800829089776481,
+              0.0925551161599981,
+              0.02787706527025295
+            ],
+            [
+              0.055017628230371915,
+              0.02866433442930761,
+              -0.19470659476048857,
+              0.06290676107248586,
+              0.048117871028323184
+            ],
+            [
+              -0.1982704917079708,
+              0.040651200928477654,
+              0.041224320215568204,
+              0.08486216726036071,
+              0.03153280330356421
+            ],
+            [
+              0.05410949260054148,
+              -0.21611373959558844,
+              0.05065356607452585,
+              0.06878664649276069,
+              0.04256403442776044
+            ]
+          ]
+        }
+      }
+    ],
+    "detach": {
+      "connected": {
+        "h": [
+          [
+            3.0,
+            0.0
+          ]
+        ],
+        "h_requires_grad": true,
+        "logits": [
+          [
+            0.0,
+            0.6931471805599453,
+            0.0
+          ]
+        ],
+        "loss": 1.3862943611198906,
+        "gradients": {
+          "embedding.weight": [
+            [
+              0.11552453009332421
+            ],
+            [
+              0.0
+            ],
+            [
+              0.11552453009332421
+            ]
+          ],
+          "layer1.weight": [
+            [
+              0.11552453009332421,
+              0.23104906018664842
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.bias": [
+            0.11552453009332421,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              0.75,
+              0.0
+            ],
+            [
+              1.5,
+              0.0
+            ],
+            [
+              -2.25,
+              0.0
+            ]
+          ],
+          "layer2.bias": [
+            0.25,
+            0.5,
+            -0.75
+          ]
+        }
+      },
+      "detached": {
+        "h": [
+          [
+            3.0,
+            0.0
+          ]
+        ],
+        "h_requires_grad": false,
+        "logits": [
+          [
+            0.0,
+            0.6931471805599453,
+            0.0
+          ]
+        ],
+        "loss": 1.3862943611198906,
+        "gradients": {
+          "embedding.weight": null,
+          "layer1.weight": null,
+          "layer1.bias": null,
+          "layer2.weight": [
+            [
+              0.75,
+              0.0
+            ],
+            [
+              1.5,
+              0.0
+            ],
+            [
+              -2.25,
+              0.0
+            ]
+          ],
+          "layer2.bias": [
+            0.25,
+            0.5,
+            -0.75
+          ]
+        }
+      },
+      "explanation": "detach 不改变前向值，阻断到输入来源的路径；后续参数仍能求导。"
+    },
+    "initialization": {
+      "random_weights_zero_bias": {
+        "parameters": {
+          "embedding.weight": [
+            [
+              0.0323773880275999,
+              -0.1547492072798271
+            ],
+            [
+              0.011007822038854025,
+              0.042549824775494564
+            ],
+            [
+              -0.0559402811713852,
+              -0.07714328509708483
+            ]
+          ],
+          "layer1.weight": [
+            [
+              0.45523570024914156,
+              0.4287525814574295,
+              -0.4164566312471321,
+              -0.3673593278463014
+            ],
+            [
+              -0.34294650248929187,
+              -0.12463296794949939,
+              0.34251973083148674,
+              0.3705010417836974
+            ],
+            [
+              -0.12246704472944057,
+              0.11243658899379126,
+              -0.41189021508542895,
+              0.2011818919498007
+            ],
+            [
+              0.12340308335420057,
+              -0.06272100220934783,
+              -0.4252651215262519,
+              0.18343021710666094
+            ],
+            [
+              -0.1877613192770374,
+              -0.1909412227767275,
+              -0.46865983457258437,
+              -0.4596335323400427
+            ],
+            [
+              0.43190878985499853,
+              -0.3478741725774355,
+              -0.2349550882516391,
+              -0.3695665073678955
+            ],
+            [
+              -0.24814477905867635,
+              -0.26659181094205214,
+              -0.2743349012065133,
+              -0.1824322022429685
+            ],
+            [
+              0.11440828480158559,
+              0.09777135153603843,
+              0.34900284574807033,
+              -0.46750439124402005
+            ],
+            [
+              -0.1907562060234694,
+              -0.06769624554466046,
+              0.43429880618889644,
+              -0.37768705692533816
+            ],
+            [
+              -0.07230464298026694,
+              -0.21181612441033867,
+              0.4814010535412248,
+              0.3456305290991824
+            ],
+            [
+              -0.11572197668272143,
+              -0.40069331744114695,
+              0.162647994852222,
+              0.0819344669882258
+            ],
+            [
+              0.20931951631773602,
+              -0.02797248375218919,
+              -0.4061730407952158,
+              0.10641380627577877
+            ],
+            [
+              -0.0008479465141315589,
+              0.49843565299070897,
+              -0.2673608920841331,
+              -0.12709497412001322
+            ],
+            [
+              0.12548492487527305,
+              -0.2234917428332088,
+              -0.48891461023325394,
+              0.22281720146757575
+            ],
+            [
+              -0.24558039343301372,
+              0.13081072104230437,
+              -0.14612025879180432,
+              -0.058412897110374555
+            ],
+            [
+              0.11281218351054488,
+              0.3994208170256334,
+              0.17971802503414389,
+              -0.35555723981786874
+            ]
+          ],
+          "layer1.bias": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              -0.13327727525287017,
+              0.10885030620617657,
+              -0.24414955109514644,
+              -0.2019194643671812,
+              0.21450161259462672,
+              0.11265894148679233,
+              -0.20611555058252382,
+              -0.002145472530145853,
+              0.22039753343303728,
+              -0.10330819119606215,
+              0.028413942018244206,
+              0.05200531742354069,
+              -0.22081531540477098,
+              0.23082261126499323,
+              -0.06651332479391141,
+              -0.06574094882721314
+            ],
+            [
+              0.15052498895539632,
+              0.026390003088970267,
+              0.0980751846626886,
+              0.025243426422447587,
+              -0.017887940444686664,
+              -0.0656332485529829,
+              0.03931521006907767,
+              0.07743062945973055,
+              -0.04451115255714987,
+              -0.15940335262588537,
+              -0.2396083773722543,
+              -0.2347306500354557,
+              -0.1445483909859042,
+              0.12564217007984416,
+              0.21021156750689465,
+              -0.20226015650988918
+            ],
+            [
+              0.23041483957296885,
+              0.03645570858598284,
+              0.06872394611548259,
+              -0.15250507443002667,
+              -0.11444690064705669,
+              -0.05683129498189742,
+              0.15560737793210108,
+              0.1083824635792676,
+              -0.1028777712419384,
+              0.13811690921336614,
+              -0.1310181225166677,
+              -0.24476443908466758,
+              0.17886554833173188,
+              0.1883937579240875,
+              -0.007861549994389204,
+              -0.03206366440641389
+            ]
+          ],
+          "layer2.bias": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "h": [
+          [
+            2.622722003903233e-05,
+            0.0,
+            0.0,
+            0.023340535822136584,
+            0.08514338531614606,
+            0.10947035906081008,
+            0.0626403825091052,
+            0.005115709502829743,
+            0.009140975612028552,
+            0.0,
+            0.042840929383818574,
+            0.025618262398390518,
+            0.0,
+            0.048809214009225624,
+            0.0,
+            0.0
+          ]
+        ],
+        "logits": [
+          [
+            0.02878815596145258,
+            -0.015808776488739996,
+            -0.012845916676332114
+          ]
+        ],
+        "loss": 1.111710942198129,
+        "gradients": {
+          "embedding.weight": [
+            [
+              -0.03789993287318045,
+              -0.09360745661051426
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.012139289678366132,
+              -0.00944160255757377
+            ]
+          ],
+          "layer1.weight": [
+            [
+              -0.004887222757221287,
+              0.023358704748981822,
+              0.008443936705243158,
+              0.011644435869005166
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0013390384837723695,
+              -0.006399995691570814,
+              -0.0023135340385604408,
+              -0.0031904311558907878
+            ],
+            [
+              0.0046784340559147585,
+              -0.022360789599414246,
+              -0.008083200420817149,
+              -0.01114696997409698
+            ],
+            [
+              0.0017886852157245495,
+              -0.008549102817391142,
+              -0.003090414637815624,
+              -0.0042617722414159875
+            ],
+            [
+              -0.005251966164332902,
+              0.02510201254956631,
+              0.009074124932034017,
+              0.012513483879243292
+            ],
+            [
+              -0.001556122022082222,
+              0.007437556394068281,
+              0.002688601791412539,
+              0.0037076605652379964
+            ],
+            [
+              0.00420981191616178,
+              -0.020120988643922363,
+              -0.007273534914798842,
+              -0.010030417542537239
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0006171885044651571,
+              -0.002949880692253145,
+              -0.0010663521852379322,
+              -0.0014705308753755098
+            ],
+            [
+              0.003402152337289327,
+              -0.016260742737861975,
+              -0.005878094865886509,
+              -0.008106064870813466
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              -0.0001952867530329661,
+              0.0009333819701064713,
+              0.0003374081894561276,
+              0.00046529576913566906
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.bias": [
+            -0.15094555351578096,
+            0.0,
+            0.0,
+            0.041357211478298204,
+            0.14449695731868972,
+            0.05524488924800839,
+            -0.16221092819025104,
+            -0.04806199995983974,
+            0.13002320979608215,
+            0.0,
+            0.019062331524057428,
+            0.10507803576956806,
+            0.0,
+            -0.006031578361617531,
+            0.0,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              8.995468357327479e-06,
+              0.0,
+              0.0,
+              0.008005387193863064,
+              0.02920266148327139,
+              0.03754637927814202,
+              0.021484533164893346,
+              0.001754597051822436,
+              0.0031351914823885716,
+              0.0,
+              0.014693674133099606,
+              0.008786606755556729,
+              0.0,
+              0.016740689234794465,
+              0.0,
+              0.0
+            ],
+            [
+              8.603112034050941e-06,
+              0.0,
+              0.0,
+              0.0076562153485493474,
+              0.027928925816119336,
+              0.03590871476299554,
+              0.020547439941389998,
+              0.0016780666010734065,
+              0.002998443493964392,
+              0.0,
+              0.014052778547758531,
+              0.00840336037151728,
+              0.0,
+              0.01601050876876807,
+              0.0,
+              0.0
+            ],
+            [
+              -1.759858039137842e-05,
+              0.0,
+              0.0,
+              -0.01566160254241241,
+              -0.057131587299390725,
+              -0.07345509404113756,
+              -0.042031973106283343,
+              -0.0034326636528958427,
+              -0.0061336349763529635,
+              0.0,
+              -0.028746452680858136,
+              -0.01718996712707401,
+              0.0,
+              -0.032751198003562534,
+              0.0,
+              0.0
+            ]
+          ],
+          "layer2.bias": [
+            0.34298215151815886,
+            0.3280222616521106,
+            -0.6710044131702695
+          ]
+        }
+      },
+      "zero_linear": {
+        "parameters": {
+          "embedding.weight": [
+            [
+              0.0323773880275999,
+              -0.1547492072798271
+            ],
+            [
+              0.011007822038854025,
+              0.042549824775494564
+            ],
+            [
+              -0.0559402811713852,
+              -0.07714328509708483
+            ]
+          ],
+          "layer1.weight": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.bias": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "layer2.bias": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "h": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "logits": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "loss": 1.0986122886681098,
+        "gradients": {
+          "embedding.weight": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.weight": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "layer1.bias": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "layer2.weight": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "layer2.bias": [
+            0.3333333333333333,
+            0.3333333333333333,
+            -0.6666666666666667
+          ]
+        }
+      },
+      "explanation": "两层全零令 h=0，输出权重梯度为0，输入路径也被零权重阻断；输出偏置仍可更新。"
+    }
+  }
+}
